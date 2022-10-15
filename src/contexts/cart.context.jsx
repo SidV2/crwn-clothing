@@ -1,7 +1,6 @@
 import { createContext, useState } from "react";
 
 const addCartItem = (cartItems, productToAdd) => {
-    debugger;
     const existingCartItem = cartItems.find(cartItem => cartItem.id === productToAdd.id);
     if (existingCartItem) {
         return cartItems.map(cartItem => cartItem.id === productToAdd.id ?
